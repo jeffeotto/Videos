@@ -1,0 +1,12 @@
+/Users/jeffeotto/Projects/Videos_Exercises/Videos_Exercises/bin/Debug/netcoreapp3.1/Videos_Exercises.deps.json
+/Users/jeffeotto/Projects/Videos_Exercises/Videos_Exercises/bin/Debug/netcoreapp3.1/Videos_Exercises.runtimeconfig.json
+/Users/jeffeotto/Projects/Videos_Exercises/Videos_Exercises/bin/Debug/netcoreapp3.1/Videos_Exercises.runtimeconfig.dev.json
+/Users/jeffeotto/Projects/Videos_Exercises/Videos_Exercises/bin/Debug/netcoreapp3.1/Videos_Exercises.dll
+/Users/jeffeotto/Projects/Videos_Exercises/Videos_Exercises/bin/Debug/netcoreapp3.1/Videos_Exercises.pdb
+/Users/jeffeotto/Projects/Videos_Exercises/Videos_Exercises/obj/Debug/netcoreapp3.1/Videos_Exercises.csprojAssemblyReference.cache
+/Users/jeffeotto/Projects/Videos_Exercises/Videos_Exercises/obj/Debug/netcoreapp3.1/Videos_Exercises.csproj.CoreCompileInputs.cache
+/Users/jeffeotto/Projects/Videos_Exercises/Videos_Exercises/obj/Debug/netcoreapp3.1/Videos_Exercises.AssemblyInfoInputs.cache
+/Users/jeffeotto/Projects/Videos_Exercises/Videos_Exercises/obj/Debug/netcoreapp3.1/Videos_Exercises.AssemblyInfo.cs
+/Users/jeffeotto/Projects/Videos_Exercises/Videos_Exercises/obj/Debug/netcoreapp3.1/Videos_Exercises.dll
+/Users/jeffeotto/Projects/Videos_Exercises/Videos_Exercises/obj/Debug/netcoreapp3.1/Videos_Exercises.pdb
+/Users/jeffeotto/Projects/Videos_Exercises/Videos_Exercises/obj/Debug/netcoreapp3.1/Videos_Exercises.genruntimeconfig.cache
