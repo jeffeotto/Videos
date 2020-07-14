@@ -17,7 +17,7 @@ namespace Videos_Exercises
             MainMenu();
             static void MainMenu()
             {
-                Console.WriteLine("Hola, para registrarse pulse R, para entrar pulse E");
+                Console.WriteLine("Hola, para registrarse pulse R , para entrar pulse E");
 
 
                 var option = Console.ReadLine().ToUpper();
@@ -28,7 +28,7 @@ namespace Videos_Exercises
 
                     if (String.IsNullOrEmpty(option))
                     {
-                        Console.WriteLine("Campo vacío, por favor elije una las opciones arriba.");
+                        Console.WriteLine("Campo vacío, por favor elije una las Opción arriba.");
                         option = Console.ReadLine();
                     }
 
@@ -54,8 +54,8 @@ namespace Videos_Exercises
 
                 Console.WriteLine("Register");
 
-                Console.WriteLine("Opciones: s - para salir");
-                Console.WriteLine("Opciones: a - para registrarte");
+                Console.WriteLine("Opción: s - para salir");
+                Console.WriteLine("Opción: a - para registrarse");
 
                 while (true)
                 {
@@ -68,8 +68,8 @@ namespace Videos_Exercises
 
                     else if (option == "a")
                     {
-                        Console.WriteLine("Para volver sin guardar alumno escriba  s.");
-                        Console.WriteLine("escriba el nombre:");
+                        Console.WriteLine("Para salir - s.");
+                        Console.WriteLine("Escriba el nombre:");
 
 
                         var name = Console.ReadLine();
@@ -79,12 +79,12 @@ namespace Videos_Exercises
 
                         while (String.IsNullOrEmpty(name))
                         {
-                            Console.WriteLine("Campo vacío, por favor elije una las opciones arriba.");
+                            Console.WriteLine("Campo vacío, por favor elije una las Opción arriba.");
                             name = Console.ReadLine();
                         }
 
 
-                        Console.WriteLine("Introdiuce Apellidos, para salir - s");
+                        Console.WriteLine("Introduce Apellidos, para salir - s");
                         var secName = Console.ReadLine();
 
                         if (secName == "s")
@@ -92,7 +92,7 @@ namespace Videos_Exercises
 
                         while (String.IsNullOrEmpty(secName))
                         {
-                            Console.WriteLine("Campo vacío, por favor elije una las opciones arriba.");
+                            Console.WriteLine("Campo vacío, por favor elije una las Opción arriba.");
                             secName = Console.ReadLine();
                         }
 
@@ -150,7 +150,7 @@ namespace Videos_Exercises
 
                 while (String.IsNullOrEmpty(option))
                 {
-                    Console.WriteLine("Campo vacío, por favor elije una las opciones arriba.");
+                    Console.WriteLine("Campo vacío, por favor elije una las Opción arriba.");
                     option = Console.ReadLine();
                 }
                 int value;
@@ -167,11 +167,11 @@ namespace Videos_Exercises
                     {
                         Console.WriteLine($"Hola {user.Name}");
 
-                        Console.WriteLine("Opciones: s - para salir");
-                        Console.WriteLine("Opciones: a - adicionar videos ");
-                        Console.WriteLine("Opciones: v - ver lista");
-                        Console.WriteLine("Opciones: t - Tag your videos");
-                        Console.WriteLine("Opciones: r - reproducción");
+                        Console.WriteLine("Opción: s - para salir");
+                        Console.WriteLine("Opción: a - adicionar videos ");
+                        Console.WriteLine("Opción: v - ver lista");
+                        Console.WriteLine("Opción: t - Tag your videos");
+                        Console.WriteLine("Opción: r - Reproducción");
 
                         while (true)
                         {
@@ -185,8 +185,8 @@ namespace Videos_Exercises
 
                             else if (handleAction == "a")
                             {
-                                Console.WriteLine("Para salir escriba s.");
-                                Console.WriteLine("escriba el título del vídeo:");
+                                Console.WriteLine("Para salir - s.");
+                                Console.WriteLine("Escribe el título del vídeo:");
 
 
                                 var title = Console.ReadLine();
@@ -196,7 +196,7 @@ namespace Videos_Exercises
 
                                 while (String.IsNullOrEmpty(title))
                                 {
-                                    Console.WriteLine("Campo vacío, por favor elije una las opciones arriba.");
+                                    Console.WriteLine("Campo vacío, por favor elije una las Opción arriba.");
                                     title = Console.ReadLine();
                                 }
 
@@ -206,7 +206,7 @@ namespace Videos_Exercises
                                 };
 
                                 user.AddVideos(myVideo);
-                                Console.WriteLine("Tag your video. Para salir 's' ");
+                                Console.WriteLine("Tag your video. Para salir - s ");
 
                                 var i = 0;
                                 while (true)
@@ -232,11 +232,11 @@ namespace Videos_Exercises
                                     Console.WriteLine($"Tags: \n {tag}");
                                 }
 
-                                Console.WriteLine("Opciones: s - para salir");
-                                Console.WriteLine("Opciones: a - adicionar videos ");
-                                Console.WriteLine("Opciones: v - ver lista");
-                                Console.WriteLine("Opciones: t - Tag your videos");
-                                Console.WriteLine("Opciones: r - reproducción");
+                                Console.WriteLine("Opción: s - Para salir");
+                                Console.WriteLine("Opción: a - Adicionar videos ");
+                                Console.WriteLine("Opción: v - Ver lista");
+                                Console.WriteLine("Opción: t - Tag your videos");
+                                Console.WriteLine("Opción: r - Reproducción");
 
                             }
 
@@ -258,7 +258,7 @@ namespace Videos_Exercises
 
                                 }
 
-                                Console.WriteLine("Write the name of video to reproduce");
+                                Console.WriteLine("Elije video para reproducir escribiendo el título.");
 
                                 var videoToPlay = Console.ReadLine();
 
@@ -267,9 +267,9 @@ namespace Videos_Exercises
 
 
 
-                                Console.WriteLine("Opciones: r - reproducir video");
-                                Console.WriteLine("Opciones: p - pausar videos ");
-                                Console.WriteLine("Opciones: s - parar video");
+                                Console.WriteLine("Opción: r - Reproducir video");
+                                Console.WriteLine("Opción: p - Pausar videos ");
+                                Console.WriteLine("Opción: s - Parar video");
                                 var statusVideo = Console.ReadLine();
 
                                 while (true)
@@ -280,25 +280,25 @@ namespace Videos_Exercises
                                     {
                                         VideoStatus play = VideoStatus.Playing;
                                         Console.WriteLine($"{videoToPlay} is {play}");
-                                        Console.WriteLine("Opciones: p - pausar videos ");
-                                        Console.WriteLine("Opciones: s - parar video");
+                                        Console.WriteLine("Opción: p - Pausar videos ");
+                                        Console.WriteLine("Opción: s - Parar video");
                                         statusVideo = Console.ReadLine();
                                     }
                                     else if (statusVideo == "p")
                                     {
                                         VideoStatus pause = VideoStatus.Paused;
                                         Console.WriteLine($"{videoToPlay} is {pause}");
-                                        Console.WriteLine("Opciones: r - reproducir video");
-                                        Console.WriteLine("Opciones: s - parar video");
-                                        Console.WriteLine("Opciones: e - parar salir");
+                                        Console.WriteLine("Opción: r - Reproducir video");
+                                        Console.WriteLine("Opción: s - Parar video");
+                                        Console.WriteLine("Opción: e - Parar salir");
                                         statusVideo = Console.ReadLine();
                                     }
                                     else if (statusVideo == "s")
                                     {
                                         VideoStatus stop = VideoStatus.Stopped;
                                         Console.WriteLine($"{videoToPlay} is {stop}");
-                                        Console.WriteLine("Opciones: r - reproducir video");
-                                        Console.WriteLine("Opciones: e - parar salir");
+                                        Console.WriteLine("Opción: r - Reproducir video");
+                                        Console.WriteLine("Opción: e - Parar salir");
                                         statusVideo = Console.ReadLine();
 
                                     }
@@ -307,11 +307,11 @@ namespace Videos_Exercises
                                         break;
                                     }
 
-                                    Console.WriteLine("Opciones: s - para salir");
-                                    Console.WriteLine("Opciones: a - adicionar videos ");
-                                    Console.WriteLine("Opciones: v - ver lista");
-                                    Console.WriteLine("Opciones: t - Tag your videos");
-                                    Console.WriteLine("Opciones: r - reproducción");
+                                    Console.WriteLine("Opción: s - para salir");
+                                    Console.WriteLine("Opcion: a - adicionar videos ");
+                                    Console.WriteLine("Opción: v - ver lista");
+                                    Console.WriteLine("Opción: t - Tag your videos");
+                                    Console.WriteLine("Opción: r - reproducción");
                                 }
 
                             }
@@ -323,7 +323,7 @@ namespace Videos_Exercises
                     }
                     else
                     {
-                        Console.WriteLine("User not found");
+                        Console.WriteLine("Usuario no encontrado");
                         MainMenu();
                     }
                 }
